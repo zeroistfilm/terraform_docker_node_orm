@@ -1,0 +1,404 @@
+0 verbose cli [
+0 verbose cli   '/usr/local/bin/node',
+0 verbose cli   '/usr/local/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '-g',
+0 verbose cli   'sequelize-cli'
+0 verbose cli ]
+1 info using npm@7.11.2
+2 info using node@v16.1.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/node/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 8ms
+18 timing npm:load:configload Completed in 8ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing npm:load:setupLog Completed in 1ms
+21 timing npm:load:cleanupLog Completed in 3ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 0ms
+24 timing npm:load Completed in 15ms
+25 timing config:load:flatten Completed in 3ms
+26 timing arborist:ctor Completed in 0ms
+27 timing idealTree:init Completed in 10ms
+28 timing idealTree:userRequests Completed in 3ms
+29 silly idealTree buildDeps
+30 silly fetch manifest sequelize-cli@*
+31 http fetch GET 200 https://registry.npmjs.org/sequelize-cli 120ms
+32 silly placeDep ROOT sequelize-cli@6.2.0 OK for:  want: *
+33 silly fetch manifest cli-color@^1.4.0
+34 silly fetch manifest fs-extra@^7.0.1
+35 silly fetch manifest js-beautify@^1.8.8
+36 silly fetch manifest lodash@^4.17.5
+37 silly fetch manifest resolve@^1.5.0
+38 silly fetch manifest umzug@^2.3.0
+39 silly fetch manifest yargs@^13.1.0
+40 http fetch GET 200 https://registry.npmjs.org/cli-color 40ms
+41 http fetch GET 200 https://registry.npmjs.org/resolve 118ms
+42 http fetch GET 304 https://registry.npmjs.org/lodash 131ms (from cache)
+43 http fetch GET 200 https://registry.npmjs.org/umzug 130ms
+44 http fetch GET 200 https://registry.npmjs.org/js-beautify 137ms
+45 http fetch GET 200 https://registry.npmjs.org/yargs 137ms
+46 http fetch GET 200 https://registry.npmjs.org/fs-extra 156ms
+47 timing idealTree:#root Completed in 295ms
+48 silly placeDep node_modules/sequelize-cli cli-color@1.4.0 OK for: sequelize-cli@6.2.0 want: ^1.4.0
+49 silly placeDep node_modules/sequelize-cli fs-extra@7.0.1 OK for: sequelize-cli@6.2.0 want: ^7.0.1
+50 silly placeDep node_modules/sequelize-cli js-beautify@1.13.13 OK for: sequelize-cli@6.2.0 want: ^1.8.8
+51 silly placeDep node_modules/sequelize-cli lodash@4.17.21 OK for: sequelize-cli@6.2.0 want: ^4.17.5
+52 silly placeDep node_modules/sequelize-cli resolve@1.20.0 OK for: sequelize-cli@6.2.0 want: ^1.5.0
+53 silly placeDep node_modules/sequelize-cli umzug@2.3.0 OK for: sequelize-cli@6.2.0 want: ^2.3.0
+54 silly placeDep node_modules/sequelize-cli yargs@13.3.2 OK for: sequelize-cli@6.2.0 want: ^13.1.0
+55 silly fetch manifest ansi-regex@^2.1.1
+56 silly fetch manifest d@1
+57 silly fetch manifest es5-ext@^0.10.46
+58 silly fetch manifest es6-iterator@^2.0.3
+59 silly fetch manifest memoizee@^0.4.14
+60 silly fetch manifest timers-ext@^0.1.5
+61 silly fetch manifest graceful-fs@^4.1.2
+62 silly fetch manifest jsonfile@^4.0.0
+63 silly fetch manifest universalify@^0.1.0
+64 silly fetch manifest config-chain@^1.1.12
+65 silly fetch manifest editorconfig@^0.15.3
+66 silly fetch manifest glob@^7.1.3
+67 silly fetch manifest mkdirp@^1.0.4
+68 silly fetch manifest nopt@^5.0.0
+69 silly fetch manifest is-core-module@^2.2.0
+70 silly fetch manifest path-parse@^1.0.6
+71 silly fetch manifest bluebird@^3.7.2
+72 silly fetch manifest cliui@^5.0.0
+73 silly fetch manifest find-up@^3.0.0
+74 silly fetch manifest get-caller-file@^2.0.1
+75 silly fetch manifest require-directory@^2.1.1
+76 silly fetch manifest require-main-filename@^2.0.0
+77 silly fetch manifest set-blocking@^2.0.0
+78 silly fetch manifest string-width@^3.0.0
+79 silly fetch manifest which-module@^2.0.0
+80 silly fetch manifest y18n@^4.0.0
+81 silly fetch manifest yargs-parser@^13.1.2
+82 http fetch GET 200 https://registry.npmjs.org/ansi-regex 276ms
+83 http fetch GET 200 https://registry.npmjs.org/timers-ext 285ms
+84 http fetch GET 200 https://registry.npmjs.org/graceful-fs 285ms
+85 http fetch GET 200 https://registry.npmjs.org/bluebird 284ms
+86 http fetch GET 200 https://registry.npmjs.org/yargs-parser 280ms
+87 http fetch GET 200 https://registry.npmjs.org/require-directory 299ms
+88 http fetch GET 200 https://registry.npmjs.org/require-main-filename 299ms
+89 http fetch GET 200 https://registry.npmjs.org/es6-iterator 324ms
+90 http fetch GET 200 https://registry.npmjs.org/es5-ext 327ms
+91 http fetch GET 200 https://registry.npmjs.org/d 329ms
+92 http fetch GET 200 https://registry.npmjs.org/memoizee 326ms
+93 http fetch GET 200 https://registry.npmjs.org/jsonfile 323ms
+94 http fetch GET 200 https://registry.npmjs.org/path-parse 320ms
+95 http fetch GET 200 https://registry.npmjs.org/string-width 313ms
+96 http fetch GET 200 https://registry.npmjs.org/cliui 322ms
+97 http fetch GET 200 https://registry.npmjs.org/find-up 322ms
+98 http fetch GET 200 https://registry.npmjs.org/get-caller-file 324ms
+99 http fetch GET 200 https://registry.npmjs.org/universalify 334ms
+100 http fetch GET 200 https://registry.npmjs.org/set-blocking 325ms
+101 http fetch GET 200 https://registry.npmjs.org/which-module 328ms
+102 http fetch GET 200 https://registry.npmjs.org/mkdirp 342ms
+103 http fetch GET 200 https://registry.npmjs.org/config-chain 345ms
+104 http fetch GET 200 https://registry.npmjs.org/nopt 342ms
+105 http fetch GET 200 https://registry.npmjs.org/is-core-module 342ms
+106 http fetch GET 200 https://registry.npmjs.org/editorconfig 348ms
+107 http fetch GET 200 https://registry.npmjs.org/glob 347ms
+108 http fetch GET 200 https://registry.npmjs.org/y18n 827ms
+109 timing idealTree:node_modules/sequelize-cli Completed in 924ms
+110 silly placeDep node_modules/sequelize-cli ansi-regex@2.1.1 OK for: cli-color@1.4.0 want: ^2.1.1
+111 silly placeDep node_modules/sequelize-cli d@1.0.1 OK for: cli-color@1.4.0 want: 1
+112 silly placeDep node_modules/sequelize-cli es5-ext@0.10.53 OK for: cli-color@1.4.0 want: ^0.10.46
+113 silly placeDep node_modules/sequelize-cli es6-iterator@2.0.3 OK for: cli-color@1.4.0 want: ^2.0.3
+114 silly placeDep node_modules/sequelize-cli memoizee@0.4.15 OK for: cli-color@1.4.0 want: ^0.4.14
+115 silly placeDep node_modules/sequelize-cli timers-ext@0.1.7 OK for: cli-color@1.4.0 want: ^0.1.5
+116 silly fetch manifest type@^1.0.1
+117 silly fetch manifest es6-symbol@~3.1.3
+118 silly fetch manifest next-tick@~1.0.0
+119 silly fetch manifest es6-symbol@^3.1.1
+120 silly fetch manifest es6-weak-map@^2.0.3
+121 silly fetch manifest event-emitter@^0.3.5
+122 silly fetch manifest is-promise@^2.2.2
+123 silly fetch manifest lru-queue@^0.1.0
+124 silly fetch manifest next-tick@^1.1.0
+125 silly fetch manifest next-tick@1
+126 http fetch GET 200 https://registry.npmjs.org/type 83ms
+127 http fetch GET 200 https://registry.npmjs.org/es6-weak-map 83ms
+128 http fetch GET 200 https://registry.npmjs.org/event-emitter 83ms
+129 http fetch GET 200 https://registry.npmjs.org/es6-symbol 89ms
+130 http fetch GET 200 https://registry.npmjs.org/is-promise 89ms
+131 http fetch GET 200 https://registry.npmjs.org/lru-queue 88ms
+132 http fetch GET 200 https://registry.npmjs.org/next-tick 96ms
+133 timing idealTree:node_modules/sequelize-cli/node_modules/cli-color Completed in 123ms
+134 timing idealTree:node_modules/sequelize-cli/node_modules/ansi-regex Completed in 0ms
+135 silly placeDep node_modules/sequelize-cli type@1.2.0 OK for: d@1.0.1 want: ^1.0.1
+136 timing idealTree:node_modules/sequelize-cli/node_modules/d Completed in 3ms
+137 silly placeDep node_modules/sequelize-cli es6-symbol@3.1.3 OK for: es5-ext@0.10.53 want: ~3.1.3
+138 silly placeDep node_modules/sequelize-cli next-tick@1.0.0 OK for: es5-ext@0.10.53 want: ~1.0.0
+139 silly fetch manifest ext@^1.1.2
+140 http fetch GET 200 https://registry.npmjs.org/ext 32ms
+141 timing idealTree:node_modules/sequelize-cli/node_modules/es5-ext Completed in 36ms
+142 timing idealTree:node_modules/sequelize-cli/node_modules/es6-iterator Completed in 0ms
+143 silly placeDep node_modules/sequelize-cli ext@1.4.0 OK for: es6-symbol@3.1.3 want: ^1.1.2
+144 silly fetch manifest type@^2.0.0
+145 timing idealTree:node_modules/sequelize-cli/node_modules/es6-symbol Completed in 1ms
+146 silly placeDep node_modules/sequelize-cli/node_modules/ext type@2.5.0 OK for: ext@1.4.0 want: ^2.0.0
+147 timing idealTree:node_modules/sequelize-cli/node_modules/ext Completed in 2ms
+148 silly placeDep node_modules/sequelize-cli graceful-fs@4.2.6 OK for: fs-extra@7.0.1 want: ^4.1.2
+149 silly placeDep node_modules/sequelize-cli jsonfile@4.0.0 OK for: fs-extra@7.0.1 want: ^4.0.0
+150 silly placeDep node_modules/sequelize-cli universalify@0.1.2 OK for: fs-extra@7.0.1 want: ^0.1.0
+151 timing idealTree:node_modules/sequelize-cli/node_modules/fs-extra Completed in 8ms
+152 timing idealTree:node_modules/sequelize-cli/node_modules/graceful-fs Completed in 0ms
+153 silly placeDep node_modules/sequelize-cli config-chain@1.1.12 OK for: js-beautify@1.13.13 want: ^1.1.12
+154 silly placeDep node_modules/sequelize-cli editorconfig@0.15.3 OK for: js-beautify@1.13.13 want: ^0.15.3
+155 silly placeDep node_modules/sequelize-cli glob@7.1.7 OK for: js-beautify@1.13.13 want: ^7.1.3
+156 silly placeDep node_modules/sequelize-cli mkdirp@1.0.4 OK for: js-beautify@1.13.13 want: ^1.0.4
+157 silly placeDep node_modules/sequelize-cli nopt@5.0.0 OK for: js-beautify@1.13.13 want: ^5.0.0
+158 silly fetch manifest proto-list@~1.2.1
+159 silly fetch manifest ini@^1.3.4
+160 silly fetch manifest commander@^2.19.0
+161 silly fetch manifest lru-cache@^4.1.5
+162 silly fetch manifest semver@^5.6.0
+163 silly fetch manifest sigmund@^1.0.1
+164 silly fetch manifest fs.realpath@^1.0.0
+165 silly fetch manifest inflight@^1.0.4
+166 silly fetch manifest inherits@2
+167 silly fetch manifest minimatch@^3.0.4
+168 silly fetch manifest once@^1.3.0
+169 silly fetch manifest path-is-absolute@^1.0.0
+170 silly fetch manifest abbrev@1
+171 http fetch GET 200 https://registry.npmjs.org/inherits 126ms
+172 http fetch GET 200 https://registry.npmjs.org/ini 141ms
+173 http fetch GET 200 https://registry.npmjs.org/sigmund 138ms
+174 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 138ms
+175 http fetch GET 200 https://registry.npmjs.org/minimatch 141ms
+176 http fetch GET 200 https://registry.npmjs.org/inflight 144ms
+177 http fetch GET 200 https://registry.npmjs.org/fs.realpath 148ms
+178 http fetch GET 200 https://registry.npmjs.org/proto-list 160ms
+179 http fetch GET 200 https://registry.npmjs.org/commander 161ms
+180 http fetch GET 200 https://registry.npmjs.org/abbrev 151ms
+181 http fetch GET 200 https://registry.npmjs.org/once 152ms
+182 http fetch GET 304 https://registry.npmjs.org/lru-cache 172ms (from cache)
+183 http fetch GET 304 https://registry.npmjs.org/semver 170ms (from cache)
+184 timing idealTree:node_modules/sequelize-cli/node_modules/js-beautify Completed in 223ms
+185 silly placeDep node_modules/sequelize-cli ini@1.3.8 OK for: config-chain@1.1.12 want: ^1.3.4
+186 silly placeDep node_modules/sequelize-cli proto-list@1.2.4 OK for: config-chain@1.1.12 want: ~1.2.1
+187 timing idealTree:node_modules/sequelize-cli/node_modules/config-chain Completed in 7ms
+188 silly placeDep node_modules/sequelize-cli commander@2.20.3 OK for: editorconfig@0.15.3 want: ^2.19.0
+189 silly placeDep node_modules/sequelize-cli lru-cache@4.1.5 OK for: editorconfig@0.15.3 want: ^4.1.5
+190 silly placeDep node_modules/sequelize-cli semver@5.7.1 OK for: editorconfig@0.15.3 want: ^5.6.0
+191 silly placeDep node_modules/sequelize-cli sigmund@1.0.1 OK for: editorconfig@0.15.3 want: ^1.0.1
+192 silly fetch manifest pseudomap@^1.0.2
+193 silly fetch manifest yallist@^2.1.2
+194 http fetch GET 304 https://registry.npmjs.org/pseudomap 47ms (from cache)
+195 http fetch GET 304 https://registry.npmjs.org/yallist 49ms (from cache)
+196 timing idealTree:node_modules/sequelize-cli/node_modules/editorconfig Completed in 60ms
+197 timing idealTree:node_modules/sequelize-cli/node_modules/commander Completed in 0ms
+198 silly placeDep node_modules/sequelize-cli fs.realpath@1.0.0 OK for: glob@7.1.7 want: ^1.0.0
+199 silly placeDep node_modules/sequelize-cli inflight@1.0.6 OK for: glob@7.1.7 want: ^1.0.4
+200 silly placeDep node_modules/sequelize-cli inherits@2.0.4 OK for: glob@7.1.7 want: 2
+201 silly placeDep node_modules/sequelize-cli minimatch@3.0.4 OK for: glob@7.1.7 want: ^3.0.4
+202 silly placeDep node_modules/sequelize-cli once@1.4.0 OK for: glob@7.1.7 want: ^1.3.0
+203 silly placeDep node_modules/sequelize-cli path-is-absolute@1.0.1 OK for: glob@7.1.7 want: ^1.0.0
+204 silly fetch manifest wrappy@1
+205 silly fetch manifest brace-expansion@^1.1.7
+206 http fetch GET 200 https://registry.npmjs.org/brace-expansion 40ms
+207 http fetch GET 200 https://registry.npmjs.org/wrappy 46ms
+208 timing idealTree:node_modules/sequelize-cli/node_modules/glob Completed in 57ms
+209 timing idealTree:node_modules/sequelize-cli/node_modules/fs.realpath Completed in 0ms
+210 silly placeDep node_modules/sequelize-cli wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+211 timing idealTree:node_modules/sequelize-cli/node_modules/inflight Completed in 5ms
+212 timing idealTree:node_modules/sequelize-cli/node_modules/inherits Completed in 0ms
+213 timing idealTree:node_modules/sequelize-cli/node_modules/ini Completed in 0ms
+214 timing idealTree:node_modules/sequelize-cli/node_modules/jsonfile Completed in 1ms
+215 timing idealTree:node_modules/sequelize-cli/node_modules/lodash Completed in 0ms
+216 silly placeDep node_modules/sequelize-cli pseudomap@1.0.2 OK for: lru-cache@4.1.5 want: ^1.0.2
+217 silly placeDep node_modules/sequelize-cli yallist@2.1.2 OK for: lru-cache@4.1.5 want: ^2.1.2
+218 timing idealTree:node_modules/sequelize-cli/node_modules/lru-cache Completed in 19ms
+219 silly placeDep node_modules/sequelize-cli es6-weak-map@2.0.3 OK for: memoizee@0.4.15 want: ^2.0.3
+220 silly placeDep node_modules/sequelize-cli event-emitter@0.3.5 OK for: memoizee@0.4.15 want: ^0.3.5
+221 silly placeDep node_modules/sequelize-cli is-promise@2.2.2 OK for: memoizee@0.4.15 want: ^2.2.2
+222 silly placeDep node_modules/sequelize-cli lru-queue@0.1.0 OK for: memoizee@0.4.15 want: ^0.1.0
+223 silly placeDep node_modules/sequelize-cli/node_modules/memoizee next-tick@1.1.0 OK for: memoizee@0.4.15 want: ^1.1.0
+224 timing idealTree:node_modules/sequelize-cli/node_modules/memoizee Completed in 20ms
+225 timing idealTree:node_modules/sequelize-cli/node_modules/es6-weak-map Completed in 0ms
+226 timing idealTree:node_modules/sequelize-cli/node_modules/event-emitter Completed in 0ms
+227 timing idealTree:node_modules/sequelize-cli/node_modules/is-promise Completed in 0ms
+228 timing idealTree:node_modules/sequelize-cli/node_modules/lru-queue Completed in 0ms
+229 silly placeDep node_modules/sequelize-cli brace-expansion@1.1.11 OK for: minimatch@3.0.4 want: ^1.1.7
+230 silly fetch manifest balanced-match@^1.0.0
+231 silly fetch manifest concat-map@0.0.1
+232 http fetch GET 200 https://registry.npmjs.org/balanced-match 31ms
+233 http fetch GET 200 https://registry.npmjs.org/concat-map 34ms
+234 timing idealTree:node_modules/sequelize-cli/node_modules/minimatch Completed in 37ms
+235 silly placeDep node_modules/sequelize-cli balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+236 silly placeDep node_modules/sequelize-cli concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+237 timing idealTree:node_modules/sequelize-cli/node_modules/brace-expansion Completed in 6ms
+238 timing idealTree:node_modules/sequelize-cli/node_modules/balanced-match Completed in 0ms
+239 timing idealTree:node_modules/sequelize-cli/node_modules/concat-map Completed in 0ms
+240 timing idealTree:node_modules/sequelize-cli/node_modules/mkdirp Completed in 0ms
+241 timing idealTree:node_modules/sequelize-cli/node_modules/next-tick Completed in 0ms
+242 silly placeDep node_modules/sequelize-cli abbrev@1.1.1 OK for: nopt@5.0.0 want: 1
+243 timing idealTree:node_modules/sequelize-cli/node_modules/nopt Completed in 1ms
+244 timing idealTree:node_modules/sequelize-cli/node_modules/abbrev Completed in 0ms
+245 timing idealTree:node_modules/sequelize-cli/node_modules/once Completed in 0ms
+246 timing idealTree:node_modules/sequelize-cli/node_modules/path-is-absolute Completed in 0ms
+247 timing idealTree:node_modules/sequelize-cli/node_modules/proto-list Completed in 0ms
+248 timing idealTree:node_modules/sequelize-cli/node_modules/pseudomap Completed in 0ms
+249 silly placeDep node_modules/sequelize-cli is-core-module@2.4.0 OK for: resolve@1.20.0 want: ^2.2.0
+250 silly placeDep node_modules/sequelize-cli path-parse@1.0.6 OK for: resolve@1.20.0 want: ^1.0.6
+251 silly fetch manifest has@^1.0.3
+252 http fetch GET 200 https://registry.npmjs.org/has 32ms
+253 timing idealTree:node_modules/sequelize-cli/node_modules/resolve Completed in 40ms
+254 silly placeDep node_modules/sequelize-cli has@1.0.3 OK for: is-core-module@2.4.0 want: ^1.0.3
+255 silly fetch manifest function-bind@^1.1.1
+256 http fetch GET 200 https://registry.npmjs.org/function-bind 21ms
+257 timing idealTree:node_modules/sequelize-cli/node_modules/is-core-module Completed in 24ms
+258 silly placeDep node_modules/sequelize-cli function-bind@1.1.1 OK for: has@1.0.3 want: ^1.1.1
+259 timing idealTree:node_modules/sequelize-cli/node_modules/has Completed in 1ms
+260 timing idealTree:node_modules/sequelize-cli/node_modules/function-bind Completed in 0ms
+261 timing idealTree:node_modules/sequelize-cli/node_modules/path-parse Completed in 0ms
+262 timing idealTree:node_modules/sequelize-cli/node_modules/semver Completed in 0ms
+263 timing idealTree:node_modules/sequelize-cli/node_modules/sigmund Completed in 0ms
+264 timing idealTree:node_modules/sequelize-cli/node_modules/timers-ext Completed in 0ms
+265 timing idealTree:node_modules/sequelize-cli/node_modules/type Completed in 0ms
+266 silly placeDep node_modules/sequelize-cli bluebird@3.7.2 OK for: umzug@2.3.0 want: ^3.7.2
+267 timing idealTree:node_modules/sequelize-cli/node_modules/umzug Completed in 5ms
+268 timing idealTree:node_modules/sequelize-cli/node_modules/bluebird Completed in 0ms
+269 timing idealTree:node_modules/sequelize-cli/node_modules/universalify Completed in 0ms
+270 timing idealTree:node_modules/sequelize-cli/node_modules/wrappy Completed in 0ms
+271 timing idealTree:node_modules/sequelize-cli/node_modules/yallist Completed in 0ms
+272 silly placeDep node_modules/sequelize-cli cliui@5.0.0 OK for: yargs@13.3.2 want: ^5.0.0
+273 silly placeDep node_modules/sequelize-cli find-up@3.0.0 OK for: yargs@13.3.2 want: ^3.0.0
+274 silly placeDep node_modules/sequelize-cli get-caller-file@2.0.5 OK for: yargs@13.3.2 want: ^2.0.1
+275 silly placeDep node_modules/sequelize-cli require-directory@2.1.1 OK for: yargs@13.3.2 want: ^2.1.1
+276 silly placeDep node_modules/sequelize-cli require-main-filename@2.0.0 OK for: yargs@13.3.2 want: ^2.0.0
+277 silly placeDep node_modules/sequelize-cli set-blocking@2.0.0 OK for: yargs@13.3.2 want: ^2.0.0
+278 silly placeDep node_modules/sequelize-cli string-width@3.1.0 OK for: yargs@13.3.2 want: ^3.0.0
+279 silly placeDep node_modules/sequelize-cli which-module@2.0.0 OK for: yargs@13.3.2 want: ^2.0.0
+280 silly placeDep node_modules/sequelize-cli y18n@4.0.3 OK for: yargs@13.3.2 want: ^4.0.0
+281 silly placeDep node_modules/sequelize-cli yargs-parser@13.1.2 OK for: yargs@13.3.2 want: ^13.1.2
+282 silly fetch manifest strip-ansi@^5.2.0
+283 silly fetch manifest wrap-ansi@^5.1.0
+284 silly fetch manifest locate-path@^3.0.0
+285 silly fetch manifest emoji-regex@^7.0.1
+286 silly fetch manifest is-fullwidth-code-point@^2.0.0
+287 silly fetch manifest strip-ansi@^5.1.0
+288 silly fetch manifest camelcase@^5.0.0
+289 silly fetch manifest decamelize@^1.2.0
+290 http fetch GET 200 https://registry.npmjs.org/strip-ansi 55ms
+291 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 58ms
+292 http fetch GET 200 https://registry.npmjs.org/emoji-regex 63ms
+293 http fetch GET 200 https://registry.npmjs.org/decamelize 62ms
+294 http fetch GET 200 https://registry.npmjs.org/camelcase 63ms
+295 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 71ms
+296 http fetch GET 200 https://registry.npmjs.org/locate-path 72ms
+297 timing idealTree:node_modules/sequelize-cli/node_modules/yargs Completed in 106ms
+298 silly placeDep node_modules/sequelize-cli strip-ansi@5.2.0 OK for: cliui@5.0.0 want: ^5.2.0
+299 silly placeDep node_modules/sequelize-cli wrap-ansi@5.1.0 OK for: cliui@5.0.0 want: ^5.1.0
+300 silly fetch manifest ansi-regex@^4.1.0
+301 silly fetch manifest ansi-styles@^3.2.0
+302 http fetch GET 200 https://registry.npmjs.org/ansi-styles 44ms
+303 timing idealTree:node_modules/sequelize-cli/node_modules/cliui Completed in 61ms
+304 silly placeDep node_modules/sequelize-cli locate-path@3.0.0 OK for: find-up@3.0.0 want: ^3.0.0
+305 silly fetch manifest p-locate@^3.0.0
+306 silly fetch manifest path-exists@^3.0.0
+307 http fetch GET 200 https://registry.npmjs.org/path-exists 36ms
+308 http fetch GET 200 https://registry.npmjs.org/p-locate 60ms
+309 timing idealTree:node_modules/sequelize-cli/node_modules/find-up Completed in 64ms
+310 timing idealTree:node_modules/sequelize-cli/node_modules/get-caller-file Completed in 0ms
+311 silly placeDep node_modules/sequelize-cli p-locate@3.0.0 OK for: locate-path@3.0.0 want: ^3.0.0
+312 silly placeDep node_modules/sequelize-cli path-exists@3.0.0 OK for: locate-path@3.0.0 want: ^3.0.0
+313 silly fetch manifest p-limit@^2.0.0
+314 http fetch GET 200 https://registry.npmjs.org/p-limit 32ms
+315 timing idealTree:node_modules/sequelize-cli/node_modules/locate-path Completed in 38ms
+316 silly placeDep node_modules/sequelize-cli p-limit@2.3.0 OK for: p-locate@3.0.0 want: ^2.0.0
+317 silly fetch manifest p-try@^2.0.0
+318 http fetch GET 200 https://registry.npmjs.org/p-try 34ms
+319 timing idealTree:node_modules/sequelize-cli/node_modules/p-locate Completed in 36ms
+320 silly placeDep node_modules/sequelize-cli p-try@2.2.0 OK for: p-limit@2.3.0 want: ^2.0.0
+321 timing idealTree:node_modules/sequelize-cli/node_modules/p-limit Completed in 1ms
+322 timing idealTree:node_modules/sequelize-cli/node_modules/p-try Completed in 0ms
+323 timing idealTree:node_modules/sequelize-cli/node_modules/path-exists Completed in 0ms
+324 timing idealTree:node_modules/sequelize-cli/node_modules/require-directory Completed in 0ms
+325 timing idealTree:node_modules/sequelize-cli/node_modules/require-main-filename Completed in 0ms
+326 timing idealTree:node_modules/sequelize-cli/node_modules/set-blocking Completed in 0ms
+327 silly placeDep node_modules/sequelize-cli emoji-regex@7.0.3 OK for: string-width@3.1.0 want: ^7.0.1
+328 silly placeDep node_modules/sequelize-cli is-fullwidth-code-point@2.0.0 OK for: string-width@3.1.0 want: ^2.0.0
+329 timing idealTree:node_modules/sequelize-cli/node_modules/string-width Completed in 6ms
+330 timing idealTree:node_modules/sequelize-cli/node_modules/emoji-regex Completed in 0ms
+331 timing idealTree:node_modules/sequelize-cli/node_modules/is-fullwidth-code-point Completed in 0ms
+332 silly placeDep node_modules/sequelize-cli/node_modules/strip-ansi ansi-regex@4.1.0 OK for: strip-ansi@5.2.0 want: ^4.1.0
+333 timing idealTree:node_modules/sequelize-cli/node_modules/strip-ansi Completed in 1ms
+334 timing idealTree:node_modules/sequelize-cli/node_modules/which-module Completed in 0ms
+335 silly placeDep node_modules/sequelize-cli ansi-styles@3.2.1 OK for: wrap-ansi@5.1.0 want: ^3.2.0
+336 silly fetch manifest color-convert@^1.9.0
+337 http fetch GET 200 https://registry.npmjs.org/color-convert 32ms
+338 timing idealTree:node_modules/sequelize-cli/node_modules/wrap-ansi Completed in 36ms
+339 silly placeDep node_modules/sequelize-cli color-convert@1.9.3 OK for: ansi-styles@3.2.1 want: ^1.9.0
+340 silly fetch manifest color-name@1.1.3
+341 http fetch GET 200 https://registry.npmjs.org/color-name 27ms
+342 timing idealTree:node_modules/sequelize-cli/node_modules/ansi-styles Completed in 30ms
+343 silly placeDep node_modules/sequelize-cli color-name@1.1.3 OK for: color-convert@1.9.3 want: 1.1.3
+344 timing idealTree:node_modules/sequelize-cli/node_modules/color-convert Completed in 1ms
+345 timing idealTree:node_modules/sequelize-cli/node_modules/color-name Completed in 0ms
+346 timing idealTree:node_modules/sequelize-cli/node_modules/y18n Completed in 0ms
+347 silly placeDep node_modules/sequelize-cli camelcase@5.3.1 OK for: yargs-parser@13.1.2 want: ^5.0.0
+348 silly placeDep node_modules/sequelize-cli decamelize@1.2.0 OK for: yargs-parser@13.1.2 want: ^1.2.0
+349 timing idealTree:node_modules/sequelize-cli/node_modules/yargs-parser Completed in 5ms
+350 timing idealTree:node_modules/sequelize-cli/node_modules/camelcase Completed in 0ms
+351 timing idealTree:node_modules/sequelize-cli/node_modules/decamelize Completed in 1ms
+352 timing idealTree:node_modules/sequelize-cli/node_modules/ext/node_modules/type Completed in 0ms
+353 timing idealTree:node_modules/sequelize-cli/node_modules/memoizee/node_modules/next-tick Completed in 0ms
+354 timing idealTree:node_modules/sequelize-cli/node_modules/strip-ansi/node_modules/ansi-regex Completed in 0ms
+355 timing idealTree:buildDeps Completed in 2299ms
+356 timing idealTree:fixDepFlags Completed in 2ms
+357 timing idealTree Completed in 2319ms
+358 timing reify:loadTrees Completed in 2409ms
+359 timing reify:diffTrees Completed in 10ms
+360 silly reify mark retired [
+360 silly reify   '/usr/local/lib/node_modules/sequelize-cli',
+360 silly reify   '/usr/local/bin/sequelize',
+360 silly reify   '/usr/local/bin/sequelize-cli'
+360 silly reify ]
+361 silly reify moves {
+361 silly reify   '/usr/local/lib/node_modules/sequelize-cli': '/usr/local/lib/node_modules/.sequelize-cli-y22qxGmB',
+361 silly reify   '/usr/local/bin/sequelize': '/usr/local/bin/.sequelize-sUqmUArQ',
+361 silly reify   '/usr/local/bin/sequelize-cli': '/usr/local/bin/.sequelize-cli-rlSZa5u9'
+361 silly reify }
+362 timing reify:rollback:retireShallow Completed in 2ms
+363 timing command:install Completed in 2441ms
+364 verbose stack Error: EACCES: permission denied, rename '/usr/local/lib/node_modules/sequelize-cli' -> '/usr/local/lib/node_modules/.sequelize-cli-y22qxGmB'
+365 verbose cwd /home/node
+366 verbose Linux 5.4.0-1045-aws
+367 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "sequelize-cli"
+368 verbose node v16.1.0
+369 verbose npm  v7.11.2
+370 error code EACCES
+371 error syscall rename
+372 error path /usr/local/lib/node_modules/sequelize-cli
+373 error dest /usr/local/lib/node_modules/.sequelize-cli-y22qxGmB
+374 error errno -13
+375 error Error: EACCES: permission denied, rename '/usr/local/lib/node_modules/sequelize-cli' -> '/usr/local/lib/node_modules/.sequelize-cli-y22qxGmB'
+375 error  [Error: EACCES: permission denied, rename '/usr/local/lib/node_modules/sequelize-cli' -> '/usr/local/lib/node_modules/.sequelize-cli-y22qxGmB'] {
+375 error   errno: -13,
+375 error   code: 'EACCES',
+375 error   syscall: 'rename',
+375 error   path: '/usr/local/lib/node_modules/sequelize-cli',
+375 error   dest: '/usr/local/lib/node_modules/.sequelize-cli-y22qxGmB'
+375 error }
+376 error The operation was rejected by your operating system.
+376 error It is likely you do not have the permissions to access this file as the current user
+376 error
+376 error If you believe this might be a permissions issue, please double-check the
+376 error permissions of the file and its containing directories, or try running
+376 error the command again as root/Administrator.
+377 verbose exit -13
