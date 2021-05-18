@@ -143,7 +143,7 @@ resource "aws_security_group" "yd-sg" {
 resource "aws_instance" "yd-test-instance" {
   ami                         = "ami-0ba5cd124d7a79612" #ubuntu 18.04 x86-64
   availability_zone           = aws_subnet.public_subnet.availability_zone
-  instance_type               = "t2.micro"
+  instance_type               = "t2.small"
   key_name                    = aws_key_pair.adminyd.key_name
   vpc_security_group_ids      = ["${aws_security_group.yd-sg.id}"]
   subnet_id                   = aws_subnet.public_subnet.id
