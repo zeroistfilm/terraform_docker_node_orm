@@ -31,6 +31,9 @@ app.use('/uploadimage', uploadimage);
 
 
 
+
+
+
 // ===================webpage=================
 app.listen(5000, () => console.log('5000번 포트에서 대기중'));
 

@@ -1,5 +1,6 @@
 config.json
 .env
+.idea
 # Local .terraform directories
 **/.terraform/*
 

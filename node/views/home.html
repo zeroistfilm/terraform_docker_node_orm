@@ -1,7 +1,63 @@
 <html>
-  <head>
-  </head>
-  <body>
-    Hey, this is home page
-  </body>
+
+<head>
+
+
+  <style>
+    .map {
+      width: 500px;
+      height: 500px;
+
+      margin-right: 30px;
+      border-radius: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    
+    <div class="story">
+      <div class="img"></div>
+      <h2>설악산</h2>
+      <div class="map" id="map"></div>
+      <h3>8.119752100184606, 128.46577263970556</h3>
+      <p>
+        내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다.
+      </p>
+
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=fab6be6aa429b714dec5f2f1d47a0b19"></script>
+  <script>
+    
+    var markerPosition = new kakao.maps.LatLng(38.119752100184606, 128.46577263970556)
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+      mapOption = {
+        center: markerPosition, // 지도의 중심좌표
+        level: 10 // 지도의 확대 레벨
+      };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    var imageSrc = "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/2021_05_free_parents/sparta-marker.png";
+    var imageSize = new kakao.maps.Size(65, 86);
+    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+    var marker = new kakao.maps.Marker({
+      map: map,
+      position: markerPosition,
+      image: markerImage
+    });
+
+  </script>
+
+
+</body>
+
 </html>
