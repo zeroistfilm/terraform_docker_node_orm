@@ -14,9 +14,9 @@ app.use('/uploadimage', uploadimage);
 
 // ===================DB=================
 // 테이블싱크, 테이블이 없다면 생성해준다. DDL
-// sequelize.sync().then(() => {
-//     console.log('✓ DB connection success.');
-// });
+sequelize.sync().then(() => {
+    console.log('✓ DB connection success.');
+});
 
 
 // var showAllUserData = models.new_table.findAll()
@@ -42,6 +42,23 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/showallurls', async (req, res) => {
+  // DML
+  var imgurls = await models.imageurls.findAll();
+  return res.send(imgurls);
+  // res.send(showAllUserData);
+})
+
+
+
+
+app.get('/showallimg', async (req, res) => {
+
+  var showAllimgs = await models.imageurls.findAll();
+  return res.json(showAllimgs);
+  // res.send(showAllUserData);
+})
+
 app.get('/showallusers', async (req, res) => {
   // DML
   var showAllUserData = await models.new_table.findAll( {attributes:  ['UserImage'] });
@@ -65,4 +82,24 @@ console.log(req.body)//: 요청 바디를 조회
   var img = selectedone['UserImage'];
   res.end(`<img id="top-nav" src="${img}"/>`);
 })
+
+
+//AJAX GET METHOD
+app.get('/api/get',function(req,res) {
+  var data = req.query.data;
+  console.log('GET Parameter = ' + data);
+  var result = data + ' Succese';
+  console.log(result);
+  res.send({result:result});
+});
+
+
+//AJAX POST METHOD
+app.post('/api/post', function(req, res){
+  var data = req.body.data;
+  console.log('POST Parameter = ' + data);
+  var result = data + ' Succese';
+  console.log(result);
+  res.send({result:result});
+});
 

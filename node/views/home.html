@@ -1,4 +1,175 @@
+
+<!doctype html>
+ 
 <html>
+ 
+   <head>
+ 
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+ 
+    <script>
+ 
+         $(document).ready(function(){
+ 
+            $('#getMethod').click(function() {
+ 
+               var get = 'GET METHOD CALL';
+ 
+                //Ajax GET Method TEST
+                $.ajax({
+                      url: '/api/get',
+                      dataType: 'json',
+                      type: 'GET',
+                      data: {data:get},
+                      success: function(result) {
+                          if (result) {
+                            $('#get_output').html(result.result);
+                          }
+                     }
+                  });
+            });
+ 
+ 
+            $('#postMethod').click(function() {
+               var post = 'POST METHOD CALL';
+                //Ajax POST Method TEST
+                $.ajax({
+                    url: '/api/post',
+                      dataType: 'json',
+                      type: 'POST',
+                      data: {'data':post},
+                      success: function(result) {
+                          if (result) {
+                             $('#post_output').html(result.result);
+                          }
+                      }
+                  });
+            });
+         });
+ 
+      </script>
+ 
+      <style media="screen">
+        div{
+          text-align: center;
+        }
+ 
+      </style>
+ 
+   </head>
+ 
+   <body>
+ 
+         <h1>Ajax 기본 테스트</h1>
+ 
+         <div style="border: 3px solid gray; width: 180px;">
+ 
+            <h2>GET</h2>
+ 
+            <button id='getMethod'>GET</button>
+ 
+            <p id ='get_output'>
+ 
+               get
+ 
+            </p>
+ 
+         </div>
+ 
+         <div style="border: 3px solid gray; width: 180px;">
+ 
+            <h2>POST</h2>
+ 
+            <button id='postMethod'>POST</button>
+ 
+            <p id ='post_output'>
+                psot
+            </p> 
+         </div> 
+   </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>express</title>
+
+</head>
+<body>
+    <h1>Hello World Static File</h1>
+    <button id="get-all">데이터 모두 가져오기</button>
+    <button id="post-all">데이터 추가하기</button>
+    <button id="get-one">0번 데이터 가져오기</button>
+    <button id="put-one">0번 데이터 수정하기</button>
+    <button id="delete-one">0번 데이터 제거하기</button>
+    <textarea name="" id="output" cols="40" rows="10"></textarea>
+    <script>
+        $("#get-all").click(function () {
+            $.ajax({
+                url: "/drink",
+                method: "GET",
+                dataType: "text",
+                success: function (data) {
+                    $('#output').val(data)
+                    console.log(data)
+                },
+                error:function(request,status,error){
+                  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+                }
+            })
+        })
+        $("#post-all").click(function () {
+            $.ajax({
+                url: "/drink",
+                method: "POST",
+                dataType: "text",
+                success: function (data) {
+                    $('#output').val(data)
+                    console.log(data)
+                }
+            })
+        })
+        $("#get-one").click(function () {
+            $.ajax({
+                url: "/drink/0",
+                method: "GET",
+                dataType: "text",
+                success: function (data) {
+                    $('#output').val(data)
+                    console.log(data)
+                }
+            })
+        })
+        $("#put-one").click(function () {
+            $.ajax({
+                url: "/drink/0",
+                method: "PUT",
+                dataType: "text",
+                success: function (data) {
+                    $('#output').val(data)
+                    console.log(data)
+                }
+            })
+        })
+        $("#delete-one").click(function () {
+            $.ajax({
+                url: "/drink/0",
+                method: "DELETE",
+                dataType: "text",
+                success: function (data) {
+                    $('#output').val(data)
+                    console.log(data)
+                }
+            })
+        })
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <html>
 
 <head>
 
@@ -60,4 +231,4 @@
 
 </body>
 
-</html>
+</html> -->

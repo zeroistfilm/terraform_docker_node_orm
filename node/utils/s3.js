@@ -13,6 +13,7 @@ var uploadParams = {
     'Bucket': 'tf101-yd-apne2-tfstate',
     'Key': '', // pass key
     'Body': null, // pass file body
+    'ACL':'public-read'
 }
 
 s3.uploadParams = uploadParams;
